@@ -1,10 +1,10 @@
 # Weather Analysis
 
-A Python project analysing Met Office MIDAS weather observations.
+A Python project analysing 1957 Met Office MIDAS weather observations.
 
 ## Purpose
 
-This project uses real weather data to investigate temperature patterns at Portland Bill Lighthouse.
+This project uses real weather data to investigate temperature patterns at Portland Bill Lighthouse and produce statistics drawn from the data through code.
 
 ## Questions answered
 

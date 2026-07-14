@@ -2,7 +2,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-weather = pd.read_csv("weather.csv", skiprows=90, skipfooter=1, engine="python")
+filename = input("Enter Weather File Name(featured is weather.csv): "
+
+try:
+    weather = pd.read_csv(filename, skiprows=90, skipfooter=1, engine="python")
+except FileNotFoundError:
+    print("file required not found")
+    exit
+
 weather["ob_end_time"] = pd.to_datetime(weather["ob_end_time"])
 coldest = weather.loc[weather["min_air_temp"].idxmin()]
 hottest = weather.loc[weather["max_air_temp"].idxmax()]

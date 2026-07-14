@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+  account.json
+        bank.py
+        bank.py.save
+        calculator.py
+        greatesnum.py
+        hello.py
+ positive.py
